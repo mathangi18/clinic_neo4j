@@ -70,7 +70,7 @@ def get_conversation(u1, u2):
 
 def launch_gui():
     root = tk.Tk()
-    root.title("Clinic (Neo4j - Simple)")
+    root.title("Clinic")
     root.geometry("820x520")
 
     frame = tk.Frame(root); frame.pack(pady=10)
