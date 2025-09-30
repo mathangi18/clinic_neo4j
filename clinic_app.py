@@ -75,7 +75,7 @@ def launch_gui():
 
     frame = tk.Frame(root); frame.pack(pady=10)
 
-    tk.Label(frame, text="Clinic (Neo4j) — Simple demo", font=("Arial", 14)).grid(row=0, columnspan=5, pady=6)
+    tk.Label(frame, text="Clinic", font=("Arial", 14)).grid(row=0, columnspan=5, pady=6)
 
     # Buttons to open small windows
     tk.Button(frame, text="Patients", width=14, command=lambda: patient_window(root)).grid(row=1, column=0, padx=6, pady=6)
@@ -152,7 +152,6 @@ def appointment_window(parent):
     refresh()
 
 def message_window(parent):
-    # For demo: use two ids you type in (no login). Simple send/list.
     win = tk.Toplevel(parent); win.title("Messages"); win.geometry("760x520")
     top = tk.Frame(win); top.pack(pady=6)
     tk.Label(top,text="Sender ID").grid(row=0,column=0); e_sender=tk.Entry(top); e_sender.grid(row=0,column=1)
